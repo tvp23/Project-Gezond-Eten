@@ -3,6 +3,7 @@
 //Var
 $gender = $_POST["Gender"];
 
+
 //Man
 if ($gender == "Man")
 {
@@ -150,8 +151,8 @@ if ($gender == "Man")
             }
         }
 
-        echo $bmi;
-        echo $advies;
+        echo "Uw BMI is: $bmi <br>";
+        echo "dat houd in dat u $advies Heeft.";
     }
 }
 

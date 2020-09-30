@@ -1,11 +1,14 @@
 html
 {
-    background-color: lightblue;
+    background-color: var(--backgroundcolor);
+    --backgroundcolor: rgb(180, 245, 255);
+    --boxshadow:rgba(41, 80, 116, 0.61);
+    --focuscolor:rgb(0, 132, 255);
 }
 
 form
 {
-    padding-top: 200px;
+    padding-top: 50px;
     margin: auto;
     width: 50%;
     text-align: center;
@@ -13,12 +16,12 @@ form
 
 .Textbox
 {
-    border: 2px darkblue;
-    outline: 2px darkblue;
+    border-style: double;
     width: 300px;
     height: 25px;
     margin-top: 14px;
     border-radius: 5px;
+    box-shadow: 1px 1px 20px var(--boxshadow);
 }
 
 .Radio
@@ -29,7 +32,60 @@ form
 
 .Button
 {
-    border: none;
+    border: solid;
+    border-color: gray;
+    border-width: 2px;
     outline: none;
     margin-top: 14px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px var(--boxshadow);
+}
+
+#Username:focus
+{
+    box-shadow: 0px -5px var(--focuscolor);  
+}
+
+#Leeftijd:focus
+{
+    box-shadow: 0px -5px var(--focuscolor);  
+}
+
+#Gewicht:focus
+{
+    box-shadow: 0px -5px var(--focuscolor);  
+}
+
+#lengte:focus
+{
+    box-shadow: 0px -5px var(--focuscolor);   
+}
+
+
+#Submit:hover
+{
+    box-shadow: 0px -5px var(--focuscolor);   
+}
+
+.BMIAD 
+{
+    height: auto;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    border: 3px solid rgb(0, 41, 128);
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+h2
+{
+    text-shadow: 2px 2px 5px var(--boxshadow);
+    margin-top: 125px;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
 }
