@@ -1,0 +1,35 @@
+html
+{
+    background-color: lightblue;
+}
+
+form
+{
+    padding-top: 200px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.Textbox
+{
+    border: 2px darkblue;
+    outline: 2px darkblue;
+    width: 300px;
+    height: 25px;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+
+.Radio
+{
+    margin-top: 14px;
+    width: 15px;
+}
+
+.Button
+{
+    border: none;
+    outline: none;
+    margin-top: 14px;
+}
